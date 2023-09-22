@@ -15,7 +15,7 @@
 # Prerequisites
 
 1. Kubernetes cluster that observes the following version considerations:
-    1. `clickhouse-operator` versions **before** `0.16.0` are compatible with [Kubenetes after `1.16` and prior `1.22`](https://kubernetes.io/releases/).
+    1. `clickhouse-operator` versions **before** `0.16.0` are compatible with [Kubernetes after `1.16` and prior `1.22`](https://kubernetes.io/releases/).
     1. `clickhouse-operator` versions `0.16.0` **and after** are compatible [Kubernetes version `1.16` and after](https://kubernetes.io/releases/).
 1. Properly configured `kubectl`
 1. `curl`
@@ -178,7 +178,7 @@ ClickHouse is up and running!
 
 ## Connect to ClickHouse Database
 
-There are several ways to connect to ClickHouse on Kubenetes.
+There are several ways to connect to ClickHouse on Kubernetes.
 
 1. In case the previous command `kubectl get service -n test-clickhouse-operator` reported **EXTERNAL-IP** (abc-123.us-east-1.elb.amazonaws.com in our case) we can directly access ClickHouse with:
 ```bash
